@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
 import Product from './Product';
-import '../index.css'
+import '../index.css';
 
 function Products(props) {
   const { products } = props;
@@ -18,9 +18,11 @@ function Products(props) {
       imgURL={item.image}
     />
   ));
-  return <div>    
-    <section className='products'> {productArray} </section>
-    </div>;
+  return (
+    <div>
+      <section className="products"> {productArray} </section>
+    </div>
+  );
 }
 
 export default Products;
